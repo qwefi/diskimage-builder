@@ -5,3 +5,6 @@
 set -e
 
 install-packages -u
+
+yum remove -y dnsmasq-utils dnsmasq || true
+yum install -y http://kojipkgs.fedoraproject.org//packages/dnsmasq/2.65/5.fc18/i686/dnsmasq-2.65-5.fc18.i686.rpm http://kojipkgs.fedoraproject.org//packages/dnsmasq/2.65/5.fc18/i686/dnsmasq-utils-2.65-5.fc18.i686.rpm
